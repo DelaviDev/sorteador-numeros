@@ -3,6 +3,12 @@ let quantidade = parseInt(document.getElementById('quantidade').value);
 let de = parseInt(document.getElementById('de').value);
 let ate = parseInt(document.getElementById('ate').value);
 
+
+if (de > ate) {
+    alert('O campo "de" deve ser menor que o campo "até"!');
+    return;
+}
+
 let sorteados = [];
 let numero;
 
